@@ -14,8 +14,12 @@ The setup for Rust is the same for all platforms with the minor exception of ins
 
 1. Install Rust by using rustup (available [here](https://rustup.rs/))
 2. Install gcc-arm tooling
-   1. Ubuntu: `# apt install gcc-arm-embedded`
-   2. Windows: ???
+   1. Ubuntu: 
+   ```
+   # add-apt-repository ppa:team-gcc-arm-embedded/ppa -y
+   # apt install gcc-arm-embedded
+   ```
+   1. Windows: ???
 3. Open a terminal session and install the Rust toolchain for this chip. I'm not sure if this is an OS dependent command!
    1. `rustup target add thumbv6m-none-eabi`
 4. Install BOSSA
