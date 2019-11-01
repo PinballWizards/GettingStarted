@@ -1,7 +1,9 @@
 # GettingStarted
+
 How to set up a dev environment for this project
 
 ## Arduino IDE
+
 This IDE works on any OS!
 Follow the steps outlined at [this url](https://learn.adafruit.com/adafruit-feather-m0-basic-proto/setup) to add the Adafruit board support package to Arduino.
 Then follow the steps at this [other url](https://learn.adafruit.com/adafruit-feather-m0-basic-proto/using-with-arduino-ide) to set up an Arduino sketch that supports the Feather M0 Proto board.
@@ -14,17 +16,20 @@ The setup for Rust is the same for all platforms with the minor exception of ins
 
 1. Install Rust by using rustup (available [here](https://rustup.rs/))
 2. Install gcc-arm tooling
-   1. Ubuntu: 
-   ```
+   1. Ubuntu:
+
+   ```sh
    # add-apt-repository ppa:team-gcc-arm-embedded/ppa -y
    # apt install gcc-arm-embedded
    ```
-   1. Windows: ???
+
+   1. Windows: Download from the [ARM website](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm)
 3. Open a terminal session and install the Rust toolchain for this chip. I'm not sure if this is an OS dependent command!
    1. `rustup target add thumbv6m-none-eabi`
 4. Install BOSSA
    1. Use the BOSSA version that comes with the Arduino IDE. This is what I ended up doing.
       1. Ubuntu: `~/.arduino15/packages/arduino/tools/bossac/1.7.0/bossac`
+      2. Windows: `~\Documents\ArduinoData\packages\arduino\tools\bossac\1.7.0-arduino3\bossac.exe`
    2. Ubuntu: Compile from source https://github.com/shumatech/BOSSA
    3. Windows: Download binary from https://github.com/shumatech/BOSSA/releases
 
